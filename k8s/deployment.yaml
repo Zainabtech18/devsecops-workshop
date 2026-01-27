@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: deployment
 metadata:
   name: devsecops-app
 spec:
@@ -16,6 +16,6 @@ spec:
       - name: web
         image: ghcr.io/<user>/devsecops-app:latest
         ports:
-        - containerPort: 3000
-      imagePullSecrets:
+        - containerport: 3000
+      imagepullsecrets:
       - name: ghcr-secret
