@@ -1,11 +1,11 @@
-apiVersion: apps/v1
+apiversion: apps/v1
 kind: deployment
 metadata:
   name: devsecops-app
 spec:
   replicas: 1
   selector:
-    matchLabels:
+    matchlabels:
       app: devsecops-app
   template:
     metadata:
